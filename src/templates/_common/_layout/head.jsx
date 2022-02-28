@@ -2,7 +2,6 @@ import React from 'react';
 import Title from '../components/title.jsx';
 import Favicons from '../includes/favicons.jsx';
 import AntiClickjack from '../includes/anti_clickjack.jsx';
-import OmappApi from '../includes/omapp_api.jsx';
 
 const Head = () => (
     <head>
@@ -75,7 +74,6 @@ const Head = () => (
                 )}
             />
         ))}
-        <OmappApi />
     </head>
 );
 
