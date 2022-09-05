@@ -13,7 +13,7 @@ const RedirectBanner = (() => {
             const eu_country = isEuCountrySelected(Client.get('residence')) || isEuCountrySelected(State.getResponse('website_status.clients_country'));
             if (eu_country) {
                 handleRedirect();
-            } else if (!Cookies.get('binary-to-deriv')) {
+            } else if (!Cookies.get('row-lp-visited')) {
                 window.location.href = '/binary-to-deriv/';
             }
         });
