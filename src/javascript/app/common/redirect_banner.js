@@ -8,9 +8,7 @@ const isEuCountrySelected      = require('../../_common/utility').isEuCountrySel
 
 const RedirectBanner = (() => {
     const onLoad = () => {
-        if (location.pathname && location.pathname.includes('home.html')) {
-            showLoading();
-        }
+        showLoading();
         BinarySocket.wait('authorize', 'website_status', 'landing_company').then(() => {
             const eu_country = isEuCountrySelected(Client.get('residence')) || isEuCountrySelected(State.getResponse('website_status.clients_country'));
             
@@ -34,6 +32,7 @@ const RedirectBanner = (() => {
     };
 
     const loginOnLoad = () => {
+        showLoading();
         BinarySocket.wait('authorize', 'website_status', 'landing_company').then(() => {
             const eu_country = isEuCountrySelected(Client.get('residence')) || isEuCountrySelected(State.getResponse('website_status.clients_country'));
             const landing_company_shortcode = Client.get('landing_company_shortcode');
@@ -54,7 +53,9 @@ const RedirectBanner = (() => {
             } else if (!Cookies.get('row-lp-visited')) {
                 handleRowRedirect();
             }
-
+            setTimeout(() => {
+                removeLoadingImage();
+            }, 1000);
         });
 
     };

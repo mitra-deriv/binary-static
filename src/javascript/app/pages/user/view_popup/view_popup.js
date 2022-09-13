@@ -58,7 +58,7 @@ const ViewPopup = (() => {
 
         getContract();
 
-        setLoadingState(true);
+        // setLoadingState(true);
     };
 
     const responseContract = (response) => {
@@ -136,7 +136,7 @@ const ViewPopup = (() => {
     })();
 
     const showContract = () => {
-        setLoadingState(false);
+        // setLoadingState(false);
 
         if (!$container) {
             $container = makeTemplate();
@@ -726,7 +726,7 @@ const ViewPopup = (() => {
     };
 
     const showMessagePopup = (localized_text, localized_title, msg_class) => {
-        setLoadingState(false);
+        // setLoadingState(false);
         const $con = $('<div/>');
         $con.prepend($('<div/>', { id: 'sell_bet_desc', class: 'popup_bet_desc drag-handle', text: localized_title }));
         $con.append(
