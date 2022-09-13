@@ -177,7 +177,6 @@ const Home = () => {
 
     return (
         <React.Fragment>
-            <div id='redirect-loading' className='redirect-loader' />
             <div className='container'>
                 <DerivBanner has_margin />
             </div>
