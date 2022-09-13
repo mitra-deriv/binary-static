@@ -304,9 +304,6 @@ const Trading = () => (
             <div id='all_prices' />
             <Analysis />
         </div>
-        {/* <div id='trading_init_progress'>
-            <Loading />
-        </div> */}
     </React.Fragment>
 );
 
