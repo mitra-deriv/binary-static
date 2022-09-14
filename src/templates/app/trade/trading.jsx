@@ -1,7 +1,6 @@
 import React from 'react';
 import Analysis from './analysis.jsx';
 import Portfolio from '../user/portfolio.jsx';
-import Loading from '../../_common/components/loading.jsx';
 import DerivBanner from '../../_common/components/deriv_banner.jsx';
 
 const Trading = () => (
