@@ -27,8 +27,7 @@ const ViewPopup = (() => {
         sell_text_updated,
         btn_view,
         multiplier,
-        $container,
-        $loading;
+        $container;
 
     const popupbox_id   = 'inpage_popup_content_box';
     const wrapper_id    = 'sell_content_wrapper';
