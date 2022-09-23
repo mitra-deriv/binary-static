@@ -35,13 +35,13 @@ commands:
     steps:
       - restore_cache:
           keys:
-            - node-{{ checksum "package-lock.json" }}
-            - node-
+            - node-svgtest-{{ checksum "package-lock.json" }}
+            - node-svgtest-
       - run:
           name: Install npm packages
           command: npm install
       - save_cache:
-          key: node-{{ checksum "package-lock.json" }}
+          key: node-svgtest-{{ checksum "package-lock.json" }}
           paths:
             - "node_modules"
   test:
