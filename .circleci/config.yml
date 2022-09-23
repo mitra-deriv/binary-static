@@ -8,9 +8,9 @@ commands:
     steps:
       - restore_cache:
           keys:
-            - source-v1-{{ .Branch }}-{{ .Revision }}
-            - source-v1-{{ .Branch }}-
-            - source-v1-
+            - source-svgtest-{{ .Branch }}-{{ .Revision }}
+            - source-svgtest-{{ .Branch }}-
+            - source-svgtest-
       - run: 
           name: Fetch git tags 
           command: |
@@ -27,7 +27,7 @@ commands:
           name: Compress git objects 
           command: git gc
       - save_cache:
-          key: source-v1-{{ .Branch }}-{{ .Revision }}
+          key: source-svgtest-{{ .Branch }}-{{ .Revision }}
           paths:
             - ".git"
   npm_install:
