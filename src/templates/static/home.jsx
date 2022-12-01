@@ -182,10 +182,10 @@ const Home = () => {
                     <h2>{it.L('We have a new home: Deriv')}</h2>
                     <p>{it.L('We’ve rebranded the online trading space by offering new innovative products, intuitive platforms, and outstanding services.')}</p>
                     <div className='button-container'>
-                        <button>
+                        <button id='explore-deriv'>
                             {it.L('Explore Deriv')}
                         </button>
-                        <button className='create-account'>
+                        <button id='create-a-demo-account' className='create-account'>
                             {it.L('Create a demo account')}
                         </button>
                     </div>
