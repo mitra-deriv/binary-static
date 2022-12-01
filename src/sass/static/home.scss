@@ -189,7 +189,7 @@
     background: url('../images/pages/home/home-banner.png') no-repeat;
     background-position: right top;
     background-size: contain;
-    background-color: #efefef;
+    background-color: $COLOR_NEW_LIGHT_GRAY;
 
     .image-container {
         display: flex;
@@ -218,18 +218,18 @@
         }
         p {
             font-weight: 400;
-            color: #333333;
+            color: $COLOR_NEW_DARK_GRAY;
         }
         .button-container {
             display: flex;
             gap: 16px;
 
             .create-account {
-                color: #000000;
-                background: #FFFFFF;
+                color: $COLOR_BLACK;
+                background: $COLOR_WHITE;
 
-                 &:hover {
-                    background-color: #dedede;
+                &:hover {
+                    background-color: $COLOR_GRAY;
                 }
             }
         }
@@ -240,7 +240,7 @@
         flex-direction: column;
         height: unset;
         background: unset;
-        background-color: #efefef;
+        background-color: $COLOR_NEW_LIGHT_GRAY;
         align-items: center;
 
         .image-container {
