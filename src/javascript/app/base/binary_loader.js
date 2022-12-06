@@ -311,7 +311,7 @@ const changeAllBinarySignupLinkToDeriv = () => {
 
     for (let i = 0; i < elements.length; i++) {
         elements.item(i).removeAttribute('href');
-        elements.item(i).addEventListener('click', () => window.location.href = `/binary-to-deriv/?l=${language}`);
+        elements.item(i).addEventListener('click', () => window.location.href = `/binary-to-deriv/?l=${language}&source=binary`);
     }
 };
 
