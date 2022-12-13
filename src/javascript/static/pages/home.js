@@ -42,8 +42,8 @@ const Home = (() => {
         const explore_deriv_btn = getElementById('explore-deriv');
         const create_a_demo_account_btn = getElementById('create-a-demo-account');
 
-        explore_deriv_btn.addEventListener('click', () => window.open(`https://deriv.com/${language}/`));
-        create_a_demo_account_btn.addEventListener('click', () => window.open(`https://deriv.com/${language}/signup/`));
+        explore_deriv_btn.addEventListener('click', () => window.open(`https://deriv.com/${language}/`,'_self'));
+        create_a_demo_account_btn.addEventListener('click', () => window.open(`https://deriv.com/${language}/signup/`,'_self'));
     };
 
     const checkCountry = (req) => {
