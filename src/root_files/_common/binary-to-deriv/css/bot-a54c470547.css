@@ -1331,8 +1331,9 @@ button > .barspinner.white {
           font: 400 1.2rem "IBM Plex Sans", sans-serif;
           text-align: center;
           padding: 0 2rem; } }
-    .switch-inner__content .btn-group-binary {
-      padding: 0 1rem 0 1rem; }
+    @media (max-width: 1024px) {
+      .switch-inner__content .btn-group-binary {
+        padding: 0 1rem 0 1rem; } }
 
 .landing_carousel {
   display: flex !important;
@@ -2902,4 +2903,4 @@ label {
 .notifyjs-corner {
   z-index: 998 !important; }
 
-/*# sourceMappingURL=bot-de4cedccd3.css.map */
+/*# sourceMappingURL=bot-a54c470547.css.map */
