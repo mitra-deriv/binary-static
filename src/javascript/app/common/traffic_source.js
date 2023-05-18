@@ -94,7 +94,8 @@ const TrafficSource = (() => {
         if (shouldOverwrite(new_values, current_values)) {
             clearData();
             Object.keys(new_values).forEach((key) => {
-                cookie.set(key, new_values[key], { sameSite: 'none', secure: true });
+                const utm_data_cookie = new_values.replaceAll(';', '');
+                cookie.set(key, utm_data_cookie[key], { sameSite: 'none', secure: true });
             });
         }
 
